@@ -27,14 +27,14 @@ while (ret):
             face.append(name)
 
     cv2.imshow("Frame", frame)
-    if "Robera" in face:
+    if "Name" in face:
              break
 
     key = cv2.waitKey(1)
     if key == ord('q'):
         break
-if "Robera" in face:
-    names=face.index("Robera")
+if "Name" in face:
+    names=face.index("Name")
     name=face[names]
     
 
